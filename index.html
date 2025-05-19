@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="acceu.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Vidéo d'arrière-plan -->
+  <video autoplay muted loop id="bg-video">
+    <source src="background.mp4" type="video/mp4">
+    Ton navigateur ne supporte pas la vidéo HTML5.
+  </video>
+
+  <!--Bouton pour Activer le son -->
+  <button id="sound-toggle">Activer le son</button>
+
+  <header>
+    <div class="overlay">
+      <div class="logo-container">
+        <img src="mon-logo.png" alt="Logo de profil" class="logo">
+        <span class="site-title">Mon Portfolio</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+           <li><a href="index.html">Accueil</a></li>
+          <li><a href="propos.html">À propos</a></li>
+          <li><a href="profilPro.html">Mon Profil</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main>
+    <section id="accueil">
+      <h1>Bienvenue sur mon Portfolio</h1>
+      <p>Découvrez mes projets, mes compétences et mon parcours.</p>
+    </section>
+
+    <section id="contact">
+      
+   <h4> Nom : Mahamoud Mohamed Mead</h4>
+   <h4> Statut : Élève professeur en formation</h4>
+      <h5>Passionné par l’éducation et les technologies</h5>
+       <img src="montof.jpg" alt="Moi" width="2000" class="photo" onclick="lancerAnniversaire()">
+     <div id="zone-bulles"></div>
+
+<audio id="son-anniv" src="sons/anniversaire.mp3" preload="auto"></audio>
+
+    </section>
+    <div class="button-container">
+  
+  <a href="propos.html" class="btn" onclick="animateButton(this)">À propos</a>
+  <a href="profilPro.html" class="btn" onclick="animateButton(this)">Mon Profil</a>
+  <a href="#" class="btn" onclick="animateButton(this)">Contact</a>
+</div>
+
+  </main>
+ 
+
+  <script src="script.js"></script>
+  <script src="acceuille.js"></script>
+</body>
+</html>
+

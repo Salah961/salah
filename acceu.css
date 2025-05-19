@@ -1,0 +1,128 @@
+.photo{
+    position: absolute;
+    top: -40px;
+    left: 700px;
+    width: 200px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2);
+        cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid #f39c12;
+    transition: transform 1s;
+
+}
+h4{
+    color :rgb(241, 238, 236);
+    font-size: 17px;
+    
+    top: 500px;
+}
+h5{
+    color :rgb(235, 102, 13);
+    font-size: 20px;
+    
+    margin-top: 50px;
+}
+h1{
+    color :rgb(235, 102, 13);
+    font-size: 20px;
+    
+    margin-top: -100px;
+}
+p{
+    color :rgb(235, 102, 13);
+    font-size: 20px;
+    
+    margin-top: 50px;
+}
+
+  .button-container {
+    position: absolute;
+    top: 250px;
+    left: 270px;
+    transform : translate(-50%);
+    display : flex;
+    gap: 20px;
+  }
+
+  .btn {
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 14px 30px;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .btn:hover {
+    background: #0056b3;
+    box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+  }
+
+  .vibrate {
+    animation: shake 0.4s ease, glow 0.4s ease;
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(0px); }
+  }
+
+  @keyframes glow {
+    0% { box-shadow: 0 0 5px #00f7ff; }
+    50% { box-shadow: 0 0 20px #00f7ff, 0 0 30px #00f7ff; }
+    100% { box-shadow: 0 0 5px #00f7ff; }
+  }
+  .photo:active {
+    transform: scale(1.05);
+  }
+
+  #zone-bulles {
+    position: relative;
+    height: 0;
+  }
+
+  .bulle {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    animation: monter 2s ease-out forwards;
+    opacity: 0.8;
+  }
+
+  @keyframes monter {
+    0% {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-150px);
+      opacity: 0;
+    }
+  }
+/* Responsive design */
+@media (max-width: 768px) {
+  .photo {
+    position: static;
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+  }
+
+  h1, h4, h5 {
+    font-size: 16px;
+    text-align: center;
+  }
+}
